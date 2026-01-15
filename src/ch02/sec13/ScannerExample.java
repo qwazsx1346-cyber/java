@@ -18,7 +18,7 @@ public class ScannerExample {
       int result = x + y;
       System.out.printf( "%d + %d = %d\n", x, y, result );
 
-      while(true) {
+      while (true) {
           System.out.print("문자열 입력: ");
           String data = scanner.next();
           if( data.equals("q") ) { //if문에 올 수 있는 타입은 bloone타입 밖에 없음

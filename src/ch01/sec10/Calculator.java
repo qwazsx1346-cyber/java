@@ -4,7 +4,8 @@ primitive type (원시타입/일반타입) 자바에 8개가 존재
 정수형: byte, short, int, long
 실수형: float, double
 불린형: boolean
-문자형: char
+문자형: char 문자하나일 때
+string은 문자가 두개 이상일 때 사용
 
  */
 
