@@ -6,10 +6,12 @@ public class CarMain {
         c1.introduceMySelf();
 
         Car c2 = new Car("K8");
-        c2.introduceMySelf();
-        c2.model = "제네시스";
-        c2.color = "그레이";
-        c2.maxSpeed = 800;
-        c2.introduceMySelf();
+        c2.introduceMySelf(); //K8, 흰색, 290
+
+        Car c3 = new Car();
+        c3.introduceMySelf(); //모닝, 회색, 150
+
+        Car c4 = new Car("K5", 220);
+        c4.introduceMySelf(); //K5, 회색, 220
     }
 }

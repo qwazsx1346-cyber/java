@@ -5,14 +5,22 @@ public class Car {
     String color;
     int maxSpeed;
 
+    public Car(String model, int maxSpeed) {
+        this(model, "회색", maxSpeed);
+    }
+
+    public Car() {
+        this("모닝", "회색", 150);
+    }
+
+    public  Car(String model) {
+        this(model, "흰색", 290);
+    }
+
     public Car(String model, String color, int maxSpeed) {
         this.model = model;
         this.color = color;
         this.maxSpeed = maxSpeed;
-    }
-
-    public Car(String model) {
-        this.model = model;
     }
 
     void introduceMySelf() {
