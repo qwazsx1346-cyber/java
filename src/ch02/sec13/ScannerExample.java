@@ -17,7 +17,9 @@ public class ScannerExample {
 
       int result = x + y;
       System.out.printf( "%d + %d = %d\n", x, y, result );
-
+      // d:정수, f:실수, s:문자열, b:불린, c:문자
+      //%뒤에 붙는 값 만큼 뒤에 적어줘야함
+      //%02d 면 정수를 불러옴에 있어서 2자리수를 맞추고 빈자리는 0으로 채운다는 뜻
       while (true) {
           System.out.print("문자열 입력: ");
           String data = scanner.next();

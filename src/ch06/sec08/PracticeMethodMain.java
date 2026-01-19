@@ -17,5 +17,26 @@ public class PracticeMethodMain {
       int r4 = pm.random(10, 15); //10~14 랜덤값 리턴
       System.out.println("r3: " + r3);
       System.out.println("r4: " + r4);
+
+      /* 90점 초과 콘솔에 "A", 88점 초과는 "B", 나머지는 "C" 리턴 */
+      String grade = pm.getGrade(100);
+      System.out.println("grade: " + grade);
+
+      int score = pm.random(101);
+      System.out.println("score: " + score);
+      System.out.println(pm.getGrade(score));
+
+      pm.printStar(5); //*****
+      pm.printStar(3); //***
+      System.out.println("-----");
+      pm.printStarTriangle(4);
+      System.out.println("-----");
+      pm.printStarRectangle(4);
+      pm.gugudan(5);
+      pm.gugudan(3, 6);
+
+      System.out.println("-----");
+      int sum = pm.sum(10, 50); //10~50까지 순차적으로 더한값을 리턴
+      System.out.println("sum: " + sum);
     }
 }
