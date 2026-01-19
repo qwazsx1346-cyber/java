@@ -1,5 +1,7 @@
 package ch06.sec08;
 
+import java.util.Arrays;
+
 public class PracticeMethod2Main {
     public static void main(String[] args) {
       //practiceMethod2 객체화
@@ -19,5 +21,11 @@ public class PracticeMethod2Main {
       int[] arr = { 10, 5, 8, 11 };
       int sum = pm.sumArr(arr); //배열의 모든 값 더한 뒤 리턴
       System.out.println("sum: " + sum);
+
+      int[] arr2 = pm.deepCopy(arr); //깊은 복사
+      System.out.println("arr2: " + Arrays.toString(arr2));
+
+      int max = pm.getMax(arr);
+      System.out.println("max: " + max);
     }
 }

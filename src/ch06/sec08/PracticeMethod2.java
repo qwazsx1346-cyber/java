@@ -24,4 +24,22 @@ public class PracticeMethod2 {
         }
         return sum;
     }
+
+    public int[] deepCopy(int[] arr) {
+        int[] arr2 = new int[arr.length];
+        for (int i=0; i< arr.length; i++) {
+            arr2[i] = arr[i];
+        }
+        return arr2;
+    }
+
+    public int getMax(int[] arr) {
+        int max = arr[0];
+        for (int i=1; i<arr.length; i++) { //0번방은 넣어놨으니 1번방부터 비교
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        return max;
+    }
 }
