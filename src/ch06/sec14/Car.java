@@ -23,6 +23,9 @@ public class Car {
         리턴타입은 void (값은 받기만 하지 리턴하진 않는다.)
         파라미터는 필드의 타입과 동일하게 한다.
         전달받은 값을 필드에 대입한다.
+
+        setter가 있으면 mutable이다. 수정가능하다.
+        setter가 없으면 immutable이다. 수정불가능하다.
      */
     public void setModel(String model) {
         this.model = model;
@@ -30,5 +33,13 @@ public class Car {
 
     public void setSpeed(int speed) {
         this.speed = speed;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public int getSpeed() {
+        return speed;
     }
 }
