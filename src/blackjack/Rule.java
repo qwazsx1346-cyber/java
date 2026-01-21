@@ -28,7 +28,7 @@ public class Rule {
 
 //        int dealerScore = 10; 숫자넣어서 누가이긴지 제대로 나오는지 확인용
 //        int gamerScore = 10;
-
+        System.out.printf("딜러 점수합계: %d || 게이머 점수합계: %d\n", dealerScore, gamerScore);
         if ( dealerScore == gamerScore || dealerScore > BLACKJACK_SCORE && gamerScore > BLACKJACK_SCORE ) {
             System.out.println("무승부");
         } else if ( dealerScore > BLACKJACK_SCORE && gamerScore <= BLACKJACK_SCORE ||
@@ -47,4 +47,8 @@ public class Rule {
         ...
          */
     }
+
+    public static void showYourCards() {
+
+      }
 }
