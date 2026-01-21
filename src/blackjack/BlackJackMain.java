@@ -15,11 +15,11 @@ public class BlackJackMain {
         for(Card c : gamer.openCard()) { //향상된 for문
             System.out.println(c);
         }
-        Card[] gamerCards = gamer.openCard();
-        for(int i=0; i<gamerCards.length; i++) {
-            Card c = gamerCards[i];
-            System.out.println(c);
-        }
+//        Card[] gamerCards = gamer.openCard();
+//        for(int i=0; i<gamerCards.length; i++) {
+//            Card c = gamerCards[i];
+//            System.out.println(c);
+//        }
         System.out.println("-- 딜러 받은 카드들 --");
         for(Card c : dealer.openCard()) {
             System.out.println(c);
