@@ -39,9 +39,12 @@ public class TvRemoteControl implements RemoteControl{
 
     @Override
     public void mute() {
+        //mute할 때 volume이 0보다 크면 기존값을 새로운변수에 저장하고 0을 내보냄
+        //
         if(volume > MIN_VOLUME) {
             muteVolume = volume;
             volume = 0;
+            System.out.print("(음소거) ");
         } else {
             volume = muteVolume;
         }
