@@ -10,9 +10,7 @@ public class Gamer {
         this("게이머");
     }
 
-    protected Gamer(String name) {
-        this.name = name;
-    }
+    protected Gamer(String name) { this.name = name; }
 
     //순차적으로 cards방에 넣어주기
     public void receiveCard(Card card) {
