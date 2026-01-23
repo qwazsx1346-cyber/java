@@ -30,7 +30,7 @@ public class LambaExample {
           }
         });
 
-        //3번째 람다식 이용
+        //3번째 람다식 이용 //추상메소드가 하나일때만 사용가능. 람다식사용하면 보통 FunctionalInterface라는 애노베이션이 있음.
         Workable w3 = () -> System.out.println("강사가 열심히 강의를 한다.");
         p.action(w3); //삼단논법에 의해 아래와같이 사용해도됨
         p.action(() -> System.out.println("강사가 열심히 강의를 한다.2"));
