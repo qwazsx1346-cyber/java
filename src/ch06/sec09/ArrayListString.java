@@ -88,5 +88,12 @@ public class ArrayListString {
             temp += ", " + arr[i];
         }
         return "[" + temp + "]";
+        /* ArrayListStringMain2에서 보낸 void함수값을 하나의 문자열로
+           출력하기 위해 []까지 넣어줌.
+           배열자체는 0번방에 어떤값, 1번방에 어떤값이 포함되어있는것이고
+           그걸 출력하기위해서 System.out.print에서는 Array.toString을 사용하여
+           배열을 문자열로 바꾼 후 출력.
+           여기서는 양쪽에 [ ] 를 넣어서 수동으로 문자열로 바꿔서 출력해주는 과정임.
+         */
     }
 }
